@@ -23,3 +23,4 @@ console.log('decrement by 1', blah-1);
 console.log('decrement by 2', blah-2);
 console.log('decrement by 10', blah-10);
 console.log('decrement by k', blah-k);
+console.log('end of numbers.js');
