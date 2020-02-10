@@ -10,9 +10,9 @@ console.log('power of num1 to the num2', num1**num2);
 console.log('the result as an integer, stripped out of its decimals', Math.floor(num1/num2));
 let blah = 24
 console.log('blah =' , blah);
-console.log('right most digit:', blah%20);
+console.log('right most digit:', blah%10);
 console.log('is even if blah%2=0. blah%2=', blah%2);
-console.log('increment by 1', blah+1);
+console.log('increment by 1', blah=+1);
 console.log('increment by 2', blah+2);
 console.log('increment by 10', blah+10);
 let k=4;
