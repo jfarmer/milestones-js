@@ -12,15 +12,23 @@ let blah = 24
 console.log('blah =' , blah);
 console.log('right most digit:', blah%10);
 console.log('is even if blah%2=0. blah%2=', blah%2);
-console.log('increment by 1', blah=+1);
-console.log('increment by 2', blah+2);
-console.log('increment by 10', blah+10);
+blah++;
+console.log('increment by 1', blah);
+blah+=2;
+console.log('increment by 2', blah);
+blah+=10;
+console.log('increment by 10', blah);
 let k=4;
 console.log('k is', k);
-console.log('increment by k', blah+k);
+blah+=k;
+console.log('increment by k', blah);
 console.log('------NOW WE DECREMENT-------');
-console.log('decrement by 1', blah-1);
-console.log('decrement by 2', blah-2);
-console.log('decrement by 10', blah-10);
-console.log('decrement by k', blah-k);
+blah--;
+console.log('decrement by 1', blah);
+blah-=2
+console.log('decrement by 2', blah);
+blah-=10
+console.log('decrement by 10', blah);
+blah-=k
+console.log('decrement by k', blah);
 console.log('end of numbers.js');
