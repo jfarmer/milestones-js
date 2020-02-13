@@ -1,0 +1,33 @@
+let coolArray = [1,3,4,6,8,2];
+console.log("!Array Time! First let's create an array like this *let coolArray = [1,3,4,6,8,2]*");
+console.log();
+let length = coolArray.length;
+console.log("To create a variable for the length of coolArray we will use the .length operator; write something like *let length = coolArray.length*");
+console.log();
+console.log("Because the index (spot) count of arrays starts at 0, not 1, if we want to return what is at the first spot in the array, we would instead write *coolArray[0]*")
+console.log("So this code would return... " + coolArray[0] + ", the first value in coolArray");
+console.log();
+console.log("To find the value at the second index, we would write *coolArray[1]* and get... " + coolArray[1]);
+console.log();
+console.log("To find the last index in coolArray we would type *coolArray[coolArray.length-1]* and get..." + coolArray[coolArray.length-1]);
+console.log();
+console.log("Now let's specify which index to find using a variable: first create a variable with the number index you want to select (let's say it's 4) like this *let k = 4;*");
+let k = 4;
+console.log("To find index k, you need to factor in that index count starts from 0, so you would write *coolArray[k-1]* which returns index k (4) of the array... " + coolArray[k-1]);
+console.log();
+coolArray.push(9);
+console.log("If we wanted to append a new number (9) to the end we would use the .push command like this *coolArray.push(9)");
+console.log("After appending in this way, coolArray now contains 9 in the last index when printed out..." + coolArray);
+console.log();
+console.log("If we want to remove the last element of coolArray, we would use the splice command; in order to use splice to take away an element, we need to specify which index the removal starts at and how many values it will remove, like this: *coolArray.splice(coolArray.length-1,1)*")
+coolArray.splice(coolArray.length-1,1);
+console.log("Here is how coolArray looks after that splice has been performed and we remove the 9 previously appended... " + coolArray);
+console.log();
+console.log("Now let's use splice to add a new element at the beginning of cool array; in order to do this we need to specify 1) where we want to add 2) how many we want to replace (if any) and 3) what we want to add, inside the parentheses, like this *coolArray.splice(0,0,345)* to add the number 345 at the first index and not replace any elements");
+coolArray.splice(0,0,345);
+console.log("After prepending the number 345, now coolArray now looks like this... " + coolArray);
+console.log();
+console.log("Now, let's remove 345 using splice again. To remove we would just specify the index and how many elements we want to remove, so we would type *coolArray.splice(0,1)*");
+coolArray.splice(0,1);
+console.log("So now coolArray again looks like... " + coolArray + " without 345 in its front");
+console.log("Now we are done learning about Arrays!");
