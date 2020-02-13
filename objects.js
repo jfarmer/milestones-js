@@ -5,17 +5,17 @@ console.log("An object contains keys with their own values, like a collection of
 console.log("new object personData created with {} brackets");
 let personData = {};
 console.log();
-console.log("First set a key for name within personData by setting the key ~firstName~ to ~Jean-Luc~ using these syntax...");
-console.log("*personData.firstName = Jean-Luc* , with quotes around the value (Jean-Luc) to tell the computer that it is a string");
+console.log("setting new key ~firstName~ to ~Jean-Luc~ using these syntax:");
 personData.firstName = "Jean-Luc";
 console.log(personData);
 console.log();
-console.log("give Jean-Luc a last name and an age like this...");
+console.log("give Jean-Luc a last name and an age like this:");
 personData.lastName = "Picard";
 personData.age = "79";
-console.log("The personData object now looks like this when printed...");
+console.log("The personData object now looks like this when printed:");
 console.log(personData);
 console.log();
+onsole.log("You can also create an object all at once, in the way that I did here with daysInMonth:");
 let daysInMonth = {
   January : 31,
   February : 28,
@@ -30,3 +30,5 @@ let daysInMonth = {
   November : 30,
   December : 31 };
 console.log("You can also create an object all at once, in the way that I did here with daysInMonth");
+console.log();
+console.log("Done!");
