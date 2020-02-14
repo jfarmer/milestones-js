@@ -1,37 +1,27 @@
-In a file called `conversions.js`, you should be able to do the following:
-
+console.log("!Conversion Functions!");
 console.log("To turn a number to a string use the toString() function:");
 let num = 1234;
 let numString = num.toString();
 console.log(numString);
-console.log("Gives type of variable: " + numString.typeOf());
+console.log("Type of variable: " + typeof numString);
 console.log();
-console.log("To turn a string to a number use the Number() function:");
+console.log("To turn a string to a number use the parseInt() function:");
 let wordNum = "1234";
-let numNum = wordNum.number();
-console.log(numString);
-console.log(wordNum.typeOf());
+let numNum = parseInt(wordNum);
+console.log(numNum);
+console.log("Type of variable: " + typeof numNum);
 console.log();
 console.log("To turn a string into an array of its characters:");
 let charArray = numString.split("");
-console.log(numArray + numArray.typeOf());
-
-
-  ```javascript
-  'apples'
-  ['a', 'p', 'p', 'l', 'e', 's']
-  ```
-
-- [ ] Given an array containing strings, join the strings together into a single string
-
-  ```javascript
-  ['one', '--two--', 'three']
-  'one--two--three'
-  ```
-
-- [ ] Given an array containing strings, join the strings together into a string separated by a `|` character
-
-  ```javascript
-  ['one', 'two', 'three']
-  'one|two|three'
-  ```
+console.log(charArray + " " + typeof charArray);
+console.log();
+let fruits = ["Apple","Banana","Orange","Berry"];
+console.log(fruits + " ; join() this array of strings into a single string:");
+let fruitSalad = fruits.join("");
+console.log(fruitSalad);
+console.log();
+console.log("Join() same array but puts a | character in between each string");
+let choppedFruit = fruits.join("|");
+console.log(choppedFruit);
+console.log();
+console.log("Done!");
